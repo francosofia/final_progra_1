@@ -25,7 +25,15 @@ def cargar_matriz():
     return matris_de_matrices
 
 
-#print(cargar_matriz())
+
+matris=cargar_matriz()
+#forma para mostrar la matris de forma estructurada+
+for fila in matris:
+    print(fila)
+
+
+
+
 def buscar_iguales_horizontal():
     matris= cargar_matriz()
     contenido_anterior=0
@@ -123,8 +131,8 @@ def buscar_consecutivos_vertical():
         
 #lo que define si es mas max o min es esto
 #if cantidad_De_iguales!=[]:
-#    maximo=max(cantidad_De_iguales ,key=cantidad_De_iguales.count)
-#    minimo=min(cantidad_De_iguales ,key=cantidad_De_iguales.count)
+#    maximo=max(cantidad_De_iguales ,key=cantidad_De_iguales.count)#compara por cantidad de apariciones.
+#    minimo=min(cantidad_De_iguales ,key=cantidad_De_iguales.count)#compara por cantidad de apariciones.
 #    print(minimo)
 #    print(maximo)
 #print(matriz_de_iguales)
@@ -133,6 +141,6 @@ def buscar_consecutivos_vertical():
 
 
 
-print(buscar_consecutivos_vertical())
+#print(buscar_consecutivos_vertical())
 
 
