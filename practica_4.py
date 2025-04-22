@@ -109,7 +109,7 @@ match movimiento_fila ,movimiento_columna:
         if matriz[movimiento_fila-1][movimiento_columna-1]!="-":
             print("entro")
         else:
-            matriz[movimiento_fila-1][movimiento_columna-1]="x"
+            matriz[movimiento_fila-1][movimiento_columna-1]="x"##para agregar algo en una posicion especifico podes usar insert(pisicon, lo que se agrega)
             print("cambio")
     case 4|5|6:
         if matriz[movimiento_fila-1][movimiento_columna-1]!="-":
