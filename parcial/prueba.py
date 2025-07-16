@@ -1,7 +1,7 @@
 def abrir_csv():
-    #lista=[]
+    lista=[]
     matriz=[]
-    with open("data_final_20250422.csv", "r") as archivo:
+    with open("parcial\data_final_20250422.csv", "r") as archivo:
         contenido = archivo.readlines()
     for lineas in contenido:
         lista=[]
@@ -47,6 +47,7 @@ def contar_cantidad_impares():
                         
                         agregar = int(linea[j])
                         lista_impares.append(agregar)
+                        print(lista_impares)
                         j += 1
                     else:
                         break
