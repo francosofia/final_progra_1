@@ -1,6 +1,6 @@
 import funciones 
 
-opcion = input("Seleccione una opción:\n1. Crear archivo\n2. Leer archivo\n3. Modificar archivo\n4. Eliminar archivo\n5. Salir\n")
+#opcion = input("Seleccione una opción:\n1. Crear archivo\n2. Leer archivo\n3. Modificar archivo\n4. Eliminar archivo\n5. Salir\n")
 
 match  opcion:
     case "1":

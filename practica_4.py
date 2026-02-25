@@ -41,7 +41,7 @@ def buscar_palabras():
             
             busqueda_1=''.join(linea[caracter:caracter + len(palabra_1)])
             
-            print(busqueda_1.upper())
+            #print(busqueda_1.upper())
             if palanra_2 in busqueda_1.upper():#encuentra la secuencia muchas veces
                 print("encontro zed")#encuentra la secuencia muchas veces
             if palabra_1==busqueda_1.upper():#encuentra la secuencia una sola vez
@@ -49,7 +49,7 @@ def buscar_palabras():
                 print("encontro franco")
 
 
-#print(buscar_palabras())
+print(buscar_palabras())
 
 
 
