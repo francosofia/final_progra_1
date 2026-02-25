@@ -2,6 +2,34 @@
 # FUNCIONES INCORPORADAS PYTHON
 # ===============================
 
+texto= "hola mundo"
+texto.capitalize()     # Primera letra mayúscula
+texto.title()          # Primera letra de cada palabra en mayúscula
+texto.upper()          # Todo en mayúsculas
+texto.lower()          # Todo en minúsculas
+texto.swapcase()       # Invierte mayúsculas/minúsculas
+texto.casefold()       # Versión más agresiva de lower()
+texto.strip()          # Quita izquierda y derecha
+texto.lstrip()         # Quita izquierda
+texto.rstrip()         # Quita derecha
+texto.removeprefix()   # Quita prefijo específico
+texto.removesuffix()   # Quita sufijo específico
+texto.replace()        # Reemplaza texto
+texto.expandtabs()     # Reemplaza \t por espacios
+texto.translate()      # Traducción usando tabla
+texto.maketrans()      # Crea tabla para translate
+texto.isalnum()        # Alfanumérico
+texto.isalpha()        # Solo letras
+texto.isdigit()        # Solo números
+texto.isdecimal()      # Decimal
+texto.isnumeric()      # Numérico
+texto.islower()        # Todo minúscula
+texto.isupper()        # Todo mayúscula
+texto.istitle()        # Formato título
+texto.isspace()        # Solo espacios
+texto.isascii()        # Solo ASCII
+texto.isidentifier()   # Es identificador válido
+texto.isprintable()    # Es imprimible
 # ---- Matemáticas ----
 abs(-5)              # Devuelve valor absoluto
 round(3.1416, 2)     # Redondea número
@@ -85,3 +113,5 @@ ascii("ñ")           # Representación ASCII
 repr("hola")         # Representación formal
 slice(0,5)           # Objeto slice
 breakpoint()         # Punto de depuración
+
+

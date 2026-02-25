@@ -62,6 +62,60 @@ def consecutivos_impares(matriz):
                 
     return retorno
 
+
+#
+#for fila in matriz:
+#    contador = 0
+#    for num in fila:
+#        if num % 2 != 0:
+#            contador += 1
+#            if contador == 2:
+#                print("EXISTEN NÚMEROS CONSECUTIVOS IMPARES")
+#                exit()
+#        else:
+#            contador = 0
+
+#print("NO EXISTEN NÚMEROS CONSECUTIVOS IMPARES")
+
+matriz = [
+    [2, 4, 6, 8],
+    [1, 3, 5, 2],
+    [7, 9, 11, 13],
+    [2, 1, 4, 3],
+    [5, 7, 9, 11],
+    [2, 4, 6, 8],
+]
+
+secuencias = []
+
+for fila in matriz:
+    secuencia_actual = []
+    
+    for num in fila:
+        if num % 2 != 0:  # es impar
+            secuencia_actual.append(num)
+        else:
+            if len(secuencia_actual) >= 2:
+                secuencias.append(secuencia_actual)
+            secuencia_actual = []
+    
+    # chequeo al final de la fila
+    if len(secuencia_actual) >= 2:
+        secuencias.append(secuencia_actual)
+
+# Resultado
+if secuencias:
+    print("EXISTEN NÚMEROS CONSECUTIVOS IMPARES")
+    print("Secuencias encontradas:", secuencias)
+    
+    mas_grande = max(secuencias, key=len)
+    print("La secuencia más grande es:", mas_grande)
+else:
+    print("NO EXISTEN NÚMEROS CONSECUTIVOS IMPARES")
+
+
+
+
 #matriz = abrir_csv('parcial/data_final_20250422.csv')
 #print(consecutivos_impares(matriz))
 

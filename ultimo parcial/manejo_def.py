@@ -25,7 +25,7 @@ def cargar_matriz(ruta):
             matriz.append((x) for x in fila)
     return matriz
 
-
+#
 #print(cargar_matriz("matriz_final_20250527.csv"))
 
 def pedir_numero():
@@ -48,9 +48,10 @@ def pedir_numero():
 lista=[1,2,3,-4,5.545,-36,3247]
 
 #print(sorted(lista, key= abs))
+matriz=[[1,2,3],[4,5,6],[7,8,9]]
 
+print(list(zip(*matriz)))
 
-#print(list(zip(*matriz)))
 def leer_csv(nombre_archivo):
     with open(nombre_archivo, 'r') as archivo:
         # Leer todas las líneas del archivo
@@ -68,10 +69,10 @@ def leer_matrez(nombre_archivo):
         contenido = archivo.read().splitlines()
     return contenido
 
-legajo=leer_csv("legajos_final_20250527.csv")
-nombre=leer_csv("nombres_final_20250527.csv")
-genero=leer_csv("generos_final_20250527.csv")
-lista_matriz = leer_matrez('matriz_final_20250527.csv')
+legajo=leer_csv("ultimo parcial\legajos_final_20250527.csv")
+nombre=leer_csv("ultimo parcial\nombres_final_20250527.csv")
+genero=leer_csv("ultimo parcial\generos_final_20250527.csv")
+lista_matriz = leer_matrez('ultimo parcial\matriz_final_20250527.csv')
 
 
 def crear_matriz(lista):
@@ -184,4 +185,42 @@ def armar_datos():
     return datos
 
 #print(armar_datos())
+
+
+
+def salida(flag_2):
+    tonoto=input("Desea realizar otra consulta? (si/no): ")
+    if tonoto.lower() == "si":
+        numero = pedir_numero()
+        flag_2 = True
+    elif tonoto.lower() == "no":
+        print("Gracias por usar el programa.")
+        flag_2 = False
+    else:
+        print("Respuesta no válida. Saliendo del programa.")
+        flag_2 = False
+    return flag_2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

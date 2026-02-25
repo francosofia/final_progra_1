@@ -20,17 +20,7 @@ while True:
                 flag_2 = False
             case 4:
                 break
-        
-        tonoto=input("Desea realizar otra consulta? (si/no): ")
-        if tonoto.lower() == "si":
-            numero = pedir_numero()
-            flag_2=True
-        elif tonoto.lower() == "no":
-            print("Gracias por usar el programa.")
-            break
-        else:
-            print("Respuesta no válida. Saliendo del programa.")
-            break
+        flag_2 = salida(flag_2)
 
 
 

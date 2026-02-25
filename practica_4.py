@@ -86,7 +86,7 @@ def tateti():
 #
 #
 #matriz = tateti()
-#
+
 #for fila in matriz:
 #    print(fila)
 #
